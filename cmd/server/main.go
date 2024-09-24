@@ -1,6 +1,6 @@
 package main
 
-import "github.com/ducthang001/go-ecommerce-backend-api/routers"
+import "github.com/ducthang001/go-ecommerce-backend-api/internal/routers"
 
 func main() {
 	r := routers.NewRouter()
