@@ -1,12 +1,39 @@
 package routers
 
 import (
+	"fmt"
+
 	c "github.com/ducthang001/go-ecommerce-backend-api/internal/controller"
+	"github.com/ducthang001/go-ecommerce-backend-api/internal/middlewares"
 	"github.com/gin-gonic/gin"
 )
 
+func AA() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		fmt.Println("Before --> AA") // 1
+		c.Next()
+		fmt.Println("After --> AA") // return third
+	}
+}
+
+func BB() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		fmt.Println("Before --> BB") // 2
+		c.Next()
+		fmt.Println("After --> BB") // return seconds
+	}
+}
+
+func CC(c *gin.Context) {
+	fmt.Println("Before --> CC") // 3
+	c.Next()
+	fmt.Println("After --> CC") // return first
+}
+
 func NewRouter() *gin.Engine {
 	r := gin.Default()
+	// use middleware
+	r.Use(middlewares.AuthenMiddleware(), BB(), CC)
 
 	v1 := r.Group("/v1/2024")
 	{
@@ -30,4 +57,3 @@ func NewRouter() *gin.Engine {
 
 	return r
 }
-
