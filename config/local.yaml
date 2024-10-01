@@ -1,22 +1,11 @@
 server:
   port: 8002
-databases:
-  - user: admin
-    password: admin
-    host: localhost
-    dbName: shopDEV
-  - user: order
-    password: order
-    host: localhost
-    dbName: order
-security:
-  jwt:
-    key: abc123
-redis:
-  user: admin
-elasticsearch:
-  user: admin
-rabbitMQ:
-  user: admin
-kafka:
-  user: admin
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  username: root
+  password:
+  dbname: shopdevgo
+  maxIdleConns: 10
+  maxOpenConns: 100
+  connMaxLifetime: 3600
