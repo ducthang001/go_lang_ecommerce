@@ -11,3 +11,8 @@
 {"level":"INFO","time":"2024-10-06T09:25:37.399+0700","caller":"initialize/mysql.go:30","msg":"Initializing MySql Successfully"}
 {"level":"INFO","time":"2024-10-06T09:28:44.404+0700","caller":"initialize/run.go:16","msg":"Config Log ok!","ok":"success"}
 {"level":"INFO","time":"2024-10-06T09:28:44.408+0700","caller":"initialize/mysql.go:30","msg":"Initializing MySql Successfully"}
+{"level":"INFO","time":"2024-10-07T12:04:23.199+0700","caller":"initialize/run.go:16","msg":"Config Log ok!","ok":"success"}
+{"level":"INFO","time":"2024-10-07T12:04:23.217+0700","caller":"initialize/mysql.go:30","msg":"Initializing MySql Successfully"}
+{"level":"INFO","time":"2024-10-07T12:09:21.467+0700","caller":"initialize/run.go:16","msg":"Config Log ok!","ok":"success"}
+{"level":"INFO","time":"2024-10-07T12:09:21.470+0700","caller":"initialize/mysql.go:30","msg":"Initializing MySql Successfully"}
+{"level":"INFO","time":"2024-10-07T12:09:21.521+0700","caller":"initialize/redis.go:44","msg":"value score is::","score":"100"}
